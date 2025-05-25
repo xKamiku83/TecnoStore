@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Barlow+Semi+Condensed:wght@400;500&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TecnoStore | Inicio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/683274ba12ae50190a970519/1is2hfu7o';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<div class="accessibility-controls">
+  <button onclick="changeFontSize(1)">A+</button>
+  <button onclick="changeFontSize(-1)">A-</button>
+</div>
+
 <body>
   <header>
     <a href="index.html" class="logo">
@@ -16,42 +37,41 @@
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#categorias">Categorías</a></li>
-        <li><a href="">Sobre nosotros</a></li>
-        <li><a href="">Contacto</a></li>
+        <li><a href="#sobre-nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
   
   <main> 
-       
     <section class="hero">
         <h1>Lo mejor en tecnología para tu día a día</h1>
         <p>Explora nuestros productos de calidad y encuentra lo que necesitas</p>
     </section>
 
-    <section class="categorias">
-      <h3>Categorías</h3>
+    <section class="categorias" id="categorias">
+      <h1>Categorías</h1>
       <div class="contenedor-categorias">
         <a href="teclados/teclados.html" class="categoria">
-          <img src="img/teclados.jpg" alt="Teclados" />
+          <img src="https://imgs.search.brave.com/ZzIdbxguacbLReWcYfvb9vhsNKS-IjTCzHz5uRhOLXE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vcVN3WkIw/TkNIOUlkOEhoaWFf/dy1rMEFFWHRteU02/RXc1X3JJNUlDMDFi/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9ZM2xpWlhK/d2RXVnlkR0V1L2JY/Z3ZiM1YwTDNCcFkz/UjEvY21WekwyTndV/M0JsWTJsaC9iRXhw/YzNSTWFXNXJjeTlV/L1pXTnNZV1J2VFdW/allXNXAvWTI4dWNH/NW4" alt="Teclados" />
           <span>Teclados</span>
         </a>
         <a href="ratones/ratones.html" class="categoria">
-          <img src="img/mouse.jpg" alt="Mouse" />
+          <img src="https://www.cyberpuerta.mx/img/product/M/CP-LOGITECH-910-005994-1.jpg" alt="Mouse" />
           <span>Ratones</span>
         </a>
         <a href="monitores/monitores.html" class="categoria">
-          <img src="img/monitores.jpg" alt="Accesorios" />
+          <img src="https://www.cyberpuerta.mx/img/product/M/CP-LENOVO-63DDKAR6LA-d71c3d.jpg" alt="Accesorios" />
           <span>Monitores</span>
         </a>
         <a href="graficas/graficas.html" class="categoria">
-          <img src="img/graficas.jpg" alt="graficas" />
+          <img src="https://www.cyberpuerta.mx/img/product/XL/CP-GIGABYTE-GV-N5080GAMINGOC-16GD-43c96c.jpg" alt="graficas" />
           <span>Gráficas</span>
         </a>
       </div>
     </section>
     
-    <section class="sobre-nosotros">
+    <section class="sobre-nosotros" id="sobre-nosotros">
       <h1>Nosotros</h1>
       <div>
         <p class="nosotros-text">
@@ -62,44 +82,51 @@
           favoritos.
         </p>
       </div>
-
       <button class="contacto-boton">Contáctanos</button>
     </section>
 
-    <section class="contactanos">
-      <div class="contactanos-all">
-        <div class="contactanos-text">
-          <h1>Envíanos tus comentarios</h1>
-          <p>Estamos aquí para resolver cualquier duda que tengas. ¡Escríbenos o llámanos!</p>
-          <p>Av. Álvaro Obregón, Col. Tierra Blanca, 80030, Culiacán, Sinaloa</p>
-          <p>667 357 458</p>
-          <p>TecnoStore@gmail.com</p>
-        </div>
-        <div class="contactanos-form">
-          <form action="">
-            <label for="name">Tu nombre</label>
-            <br>
-            <input placeholder="Escribe tu nombre aquí..." id="name" type="text">
-            <br>
-            <label for="email">Tu email</label>
-            <br>
-            <input placeholder="Escribe tu correo aquí..." id="email" type="email">
-            <br>
-            <label for="comentario">Tu comentario</label>
-            <br>
-            <input placeholder="Escribe tus comentarios aquí..." id="comentario" type="text">
-            
-          </form>
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-content">
+          <div class="contact-detail">
+            <h3 class="contact-detail-title">Envíanos tus comentarios</h3>
+            <p class="contact-detail-text">Estamos aquí para resolver cualquier duda que tengas. ¡Escríbenos o llámanos!</p>
+            <p class="contact-detail-info">Av. Álvaro Obregón, Col. Tierra Blanca, 80030, Culiacán, Sinaloa</p>
+            <p class="contact-detail-info">667 357 458</p>
+            <p class="contact-detail-info">TecnoStore@gmail.com</p>
+            <div class="social-buttons">
+              <a href="https://facebook.com/TecnoStore" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/TecnoStore" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/667357458" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="/thank-you" id="contact-form" data-netlify="true" method="POST" name="contact-form">
+              <div class="form-group">
+                <label for="name">Tu nombre <span class="required-star">*</span></label>
+                <input type="text" id="name" class="form-input" placeholder="Escribe tu nombre aquí..." name="name" required oninvalid="this.setCustomValidity('Por favor, ingresa tu nombre.')" oninput="this.setCustomValidity('')" />
+              </div>
+              <div class="form-group">
+                <label for="email">Tu email <span class="required-star">*</span></label>
+                <input type="email" id="email" class="form-input" placeholder="Escribe tu correo aquí..." name="email" required oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido.')" oninput="this.setCustomValidity('')" />
+              </div>
+              <div class="form-group">
+                <label for="comment">Tu comentario <span class="required-star">*</span></label>
+                <textarea class="form-textarea" id="comment" placeholder="Escribe tus comentarios aquí..." name="comment" required oninvalid="this.setCustomValidity('Por favor, escribe tu mensaje.')" oninput="this.setCustomValidity('')"></textarea>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn submit-button">Enviar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-
-
     </section>
-    
   </main>
 
   <footer>
-    <p>&copy; 2025 TecnoStore | Algunos los derechos reservados.</p>
+    <p>© 2025 TecnoStore | Algunos los derechos reservados.</p>
   </footer>
 </body>
 </html>
