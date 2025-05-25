@@ -1,0 +1,199 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+
+
+
+header {
+  padding: 10px;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  background-color: #252440;
+  align-items:center;
+
+}
+
+
+.logo{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo img{
+  height: 50px;
+
+}
+
+.logo h2{
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  gap: 15px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+nav a:hover {
+  color:#0077cc;
+}
+
+
+
+
+
+main {
+  padding: 0px;
+  margin: 0;
+}
+
+
+.hero {
+  background: url('img/hero.jpeg') no-repeat center center/cover;
+  color: #ddd;
+  padding: 17rem 0%;
+  text-align: center;
+}
+
+
+.categorias {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-content: center;
+  background-color: #ffffff;
+}
+.categorias h3 {
+  margin-bottom: 10px;
+  color: #000000;
+  text-align: center;
+}
+
+.contenedor-categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categoria {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #000000;
+  transition: transform 0.5s;
+}
+
+.categoria img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.categoria span {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+.sobre-nosotros {
+  align-content: center;
+  align-items: center;
+  background-color: #2d2c55;
+  margin: auto;
+  padding: 40px 20px;
+  
+}
+
+.sobre-nosotros h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.nosotros-text { 
+  margin: 0 auto;
+  color: #000000;
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 25px;
+  border-left: 7px solid #302c9b;
+  background-color:#fff ; 
+  border-radius: 8px;
+}
+
+.contacto-boton {
+  border-radius: 20px;
+  display: flex;
+  margin: 30px auto 0;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+  
+}
+
+.contacto-boton:hover{
+  background-color: #83a3dd;
+  
+}
+
+.contactanos{
+  color: #000000;
+  align-items: center;
+  align-content: center;
+  margin: 0
+}
+
+
+
+
+
+
+
+footer {
+  background-color: #0f172a;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
