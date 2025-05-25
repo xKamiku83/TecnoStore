@@ -1,4 +1,5 @@
 header {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   padding: 10px;
   display: flex;
   height: 70px;
@@ -25,13 +26,21 @@ body {
 }
 
 header {
-  padding: 10px;
+  padding: 15px;
   display: flex;
-  height: 70px;
+  min-height: 90px;
   justify-content: space-between;
   background-color: #1e28b7;
   align-items: center;
 }
+@media (max-width:600px){
+    header{
+      flex-direction: column;
+    }
+
+
+}
+
 
 .logo {
   text-decoration: none;
@@ -71,11 +80,17 @@ main {
 }
 
 .hero {
+  font-size: 30px;
+  margin: 0;
   background: url(https://cdn.pixabay.com/photo/2022/10/06/09/35/music-7502317_1280.jpg) no-repeat center center/cover;
   color: #ddd;
-  padding: 15rem 0;
+  padding: 220px;
   text-align: center;
+  text-shadow: 2px 1px rgba(0,0,0,0.5);
+  margin-top: 60px;
 }
+
+
 
 .categorias {
   padding: 40px 20px;
@@ -84,9 +99,13 @@ main {
 }
 
 .categorias h1 {
+  border: ;
   margin-bottom: 10px;
+  margin-left: px;
   color: #000000;
   text-align: center;
+ 
+
 }
 
 .contenedor-categorias {
@@ -97,6 +116,7 @@ main {
 }
 
 .categoria {
+  font-family: 'Montserrat', sans-serif;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -115,6 +135,7 @@ main {
 }
 
 .categoria span {
+  font-family: sans-serif ;
   color: #e0e0e0;
   background-color: #1e28b7;
   display: block;
@@ -126,6 +147,20 @@ main {
   transform: scale(1.05);
 }
 
+
+.ofertas{
+  background-color: #1e28b7;
+  padding: 50px;
+  align-content: center;
+  text-align: center;
+}
+
+.ofertas h1{
+  color: #ffffff;
+  margin-bottom: 20px ;
+
+}
+ 
 .accessibility-controls {
   position: fixed;
   top: 80px;
@@ -142,15 +177,16 @@ main {
   border-radius: 5px;
 }
 
-.sobre-tros {
+.sobre-nosotros {
   align-content: center;
   align-items: center;
-  background-color: #1e28b7;
+  background-color: #ffffff;
   margin: auto;
   padding: 40px 20px;
 }
 
 .sobre-nosotros h1 {
+  color: #000000;
   font-size: 36px;
   text-align: center;
   margin-bottom: 10px;
@@ -165,23 +201,11 @@ main {
   padding: 25px;
   background-color: #fff; 
   border-radius: 8px;
+  border-left: 5px solid #1e28b7;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
 }
 
-.contacto-boton {
-  border-radius: 20px;
-  display: flex;
-  margin: 30px auto 0;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #000000;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.5s;
-}
-
-.contacto-boton:hover {
-  transform: scale(1.05);
-}
 
 footer {
   background-color: #1e28b7;
@@ -375,3 +399,79 @@ footer {
     height: auto;
   }
 }
+
+/* Sección de FAQ */
+.faq-section {
+  background: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.faq-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #1e28b7;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.faq-question {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 15px;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+}
+
+.faq-answer {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 15px 15px;
+  text-align: left;
+}
+
+details[open] .faq-question {
+  border-bottom: 1px solid #ffffff;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::before {
+  content: '\25B6'; /* Flecha hacia la derecha */
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.faq-item[open] summary::before {
+  content: '\25BC'; /* Flecha hacia abajo cuando está abierto */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 8rem 0;
+  }
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-detail,
+  .contact-form {
+    max-width: 100%;
+    height: auto;
+  }
+  .faq-content {
+    max-width: 100%;
+
+    
