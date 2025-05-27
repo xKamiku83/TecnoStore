@@ -33,8 +33,9 @@ header {
   background-color: #1e28b7;
   align-items: center;
 }
-@media (max-width:600px){
+@media (max-width:700px){
     header{
+      justify-content: center;
       flex-direction: column;
     }
 
@@ -99,7 +100,6 @@ main {
 }
 
 .categorias h1 {
-  border: ;
   margin-bottom: 10px;
   margin-left: px;
   color: #000000;
@@ -149,6 +149,7 @@ main {
 
 
 .ofertas{
+  justify-content: center;
   background-color: #1e28b7;
   padding: 50px;
   align-content: center;
@@ -474,4 +475,4 @@ details[open] .faq-question {
   .faq-content {
     max-width: 100%;
 
-    
+  }
